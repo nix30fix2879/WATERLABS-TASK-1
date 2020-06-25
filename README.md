@@ -15,6 +15,8 @@ install following modules:
 
 How to install modules?
 
+Launch cmd.exe and run the below command.
+
 pip install selenium.
 
 keep the chromedriver.exe and index.html to the file system
