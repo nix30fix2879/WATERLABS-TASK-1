@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Easy Drag and Drop HTML Table Rows With jQuery</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/starter-template/starter-template.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <main role="main" class="container">
+
+     <table class="table table-striped table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Id</th>
+                <th>Jabcode</th>
+            </tr>
+        </thead>
+        <tbody>
+			 <tr>
+              <td>04</td>
+              <td>B10.2</td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>A10.2</td>
+            </tr>
+			<tr>
+              <td>06</td>
+              <td>D10.11</td>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td>J92.9</td>
+            </tr>
+			 <tr>
+              <td>05</td>
+              <td>F19.10</td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td>E24.9</td>
+            </tr>
+           
+           
+            
+
+        </tbody>
+    </table>
+
+    </main><!-- /.container -->
+
+    <!-- Bootstrap & Core Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script> 
+    <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $('tbody').sortable();
+    </script>
+
+  </body>
+</html>
