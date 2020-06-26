@@ -24,5 +24,5 @@ and update the the respective path in task1.py file.
 
 How to run this automation script.
 
-1. launch cmd.exe and navigate to py file, run below command.
+1. launch cmd.exe and navigate to task1.py file, run below command.
 2. python task1.py
