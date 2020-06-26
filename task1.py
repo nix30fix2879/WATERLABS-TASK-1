@@ -14,6 +14,9 @@ jab_code_order = ['J92.9', 'A10.2', 'E24.9', 'B10.2', 'F19.10', 'D10.11']
 # instantiate driver
 driver = webdriver.Chrome('C:\\chrome\\chromedriver.exe')
 
+# URL
+url = 'C:\\chrome\\index.html'
+
 
 class JabCodeOrdering:
 
@@ -21,7 +24,7 @@ class JabCodeOrdering:
         # Maximize browser window
         driver.maximize_window()
         # html file where jab codes are present
-        driver.get("C:\\chrome\\index.html")
+        driver.get(url)
 
     # get the list of all jab code present in  web page
     def get_current_element_order(self):
