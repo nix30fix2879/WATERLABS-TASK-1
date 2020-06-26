@@ -5,7 +5,7 @@ Prerequisites:
 
 What should be installed?
 
-1. Python 3.7.4 should be installed.
+1. Python 3.7.4 should be installed. https://www.python.org/ftp/python/3.7.4/python-3.7.4-amd64.exe
 2. chrome browser 83.x , driver available in the task reposiroty.
 
 Set PYTHONPATH to environment variables.
