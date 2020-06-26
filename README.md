@@ -5,8 +5,8 @@ Prerequisites:
 
 What should be installed?
 
-Python 3.7.4 should be installed.
-chrome browser 83.x , driver available in the task reposiroty.
+1. Python 3.7.4 should be installed.
+2. chrome browser 83.x , driver available in the task reposiroty.
 
 Set PYTHONPATH to environment variables.
 
@@ -25,4 +25,4 @@ and update the the respective path in task1.py file.
 How to run this automation script.
 
 1. launch cmd.exe and navigate to py file, run below command.
-	>python task1.py
+2. python task1.py
