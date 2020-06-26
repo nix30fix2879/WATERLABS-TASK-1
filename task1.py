@@ -1,7 +1,7 @@
 # -----------------------------------------------------------
-# demonstrates how to sort jab code on web page using selenium ActionChains
+# Demonstrates how to sort jab code on web page using selenium ActionChains
 #
-# email saxena.k989@gmail.com
+# Email saxena.k989@gmail.com
 # -----------------------------------------------------------
 import time
 
@@ -34,13 +34,16 @@ class JabCodeOrdering:
     # Arrange jab code on given sorted order based on x,y offset
     def arrangeJabCodes(self):
         for item in range(len(jab_code_order)):
+            # retrieve jab code from webpage
             row = driver.find_element_by_xpath(
                 "//tr[@class='ui-sortable-handle']//td[text()='" + jab_code_order[item] + "']")
-            print(row.text)
+            # find source element from given jab code list
             source_element = driver.find_element_by_xpath(
                 "//tr[@class='ui-sortable-handle']//td[text()='" + jab_code_order[item] + "']")
+            # get current order of elements
             current_order_of_elements = self.get_current_element_order()
             dest_element = current_order_of_elements[item]
+            # Drag source elements to destination using negative offsets
             if dest_element.location['y'] - source_element.location['y'] < 0:
                 ActionChains(driver).drag_and_drop_by_offset(source_element,
                                                              0,
@@ -48,6 +51,7 @@ class JabCodeOrdering:
                                                              source_element.location[
                                                                  'y'] - 5).perform()
             else:
+                # Drag source elements to destination using offsets
                 ActionChains(driver).drag_and_drop_by_offset(source_element,
                                                              0,
                                                              dest_element.location['y'] -
@@ -55,6 +59,7 @@ class JabCodeOrdering:
                                                                  'y']).perform()
             time.sleep(2)
 
+    # Terminate driver instance
     def terminateDriver(self):
         driver.close()
         driver.quit()
